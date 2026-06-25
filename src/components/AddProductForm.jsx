@@ -55,7 +55,7 @@ function AddProductForm({ onAddProduct }) {
         <input
           className="form-input"
           type="number"
-          placeholder="Price (USD)"
+          placeholder="Price"
           value={price}
           min="1"
           onChange={(e) => setPrice(e.target.value)}
