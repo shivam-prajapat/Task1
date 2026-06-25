@@ -40,12 +40,9 @@ function App() {
     try {
       const recommendedIds = await getRecommendations(userInput, products);
 
-      // Step 1: keep only products whose ID the AI returned
       const aiFiltered = products.filter((p) => recommendedIds.includes(p.id));
 
-      // Step 2: enforce price + category constraints in JavaScript
-      // This catches any mistakes the AI makes (e.g. returning a $450 phone
-      // when the user asked for "phone under $200")
+
       const validated = applyConstraints(aiFiltered, userInput);
 
       setRecommendations(validated);
