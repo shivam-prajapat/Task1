@@ -1,9 +1,9 @@
-# Environment variables — NEVER commit these to GitHub
+
 .env
 .env.local
 .env.*.local
 
-# Logs
+
 logs
 *.log
 npm-debug.log*
@@ -16,8 +16,6 @@ node_modules
 dist
 dist-ssr
 *.local
-
-# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
